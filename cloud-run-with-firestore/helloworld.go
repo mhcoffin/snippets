@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func getMessage() string {
         projectId := "snippets-273801"
         ctx := context.Background()
-        client, err := firestore.NewClient(ctx, projectId);
+        client, err := firestore.NewClient(ctx, projectId)
         if err != nil {
                 log.Fatalf("Failed to create firestore client: %v", err)
         }
